@@ -29,10 +29,10 @@ public class DisplayController {
 
   @GetMapping("/{id}")
   public ResponseEntity<Optional<Display>> getSingleDisplay(
-    @PathVariable ObjectId id
+    @PathVariable String displayId
   ) {
     return new ResponseEntity<Optional<Display>>(
-      displayService.singleDisplay(id),
+      displayService.singleDisplay(displayId),
       HttpStatusCode.valueOf(200)
     );
   }
