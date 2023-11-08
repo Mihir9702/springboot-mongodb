@@ -1,4 +1,4 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import java.util.Optional;
 import org.bson.types.ObjectId;
@@ -6,6 +6,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DisplayRepository extends MongoRepository<Display, ObjectId> {
-  Optional<Display> findByDisplayId(String displayId);
+public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
+  Optional<Movie> findByMovieId(String movieId);
 }

@@ -1,4 +1,4 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

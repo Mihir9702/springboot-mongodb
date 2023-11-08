@@ -1,9 +1,7 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import java.util.List;
 import java.util.Optional;
-import javax.swing.text.html.Option;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -13,26 +11,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/displays")
-public class DisplayController {
+@RequestMapping("/api/v1/movies")
+public class MovieController {
 
   @Autowired
-  private DisplayService displayService;
+  private MovieService movieService;
 
   @GetMapping
-  public ResponseEntity<List<Display>> getAllDisplays() {
-    return new ResponseEntity<List<Display>>(
-      displayService.allDisplays(),
+  public ResponseEntity<List<Movie>> getAllMovies() {
+    return new ResponseEntity<List<Movie>>(
+      movieService.allMovies(),
       HttpStatusCode.valueOf(200)
     );
   }
 
   @GetMapping("/{id}")
-  public ResponseEntity<Optional<Display>> getSingleDisplay(
-    @PathVariable String displayId
+  public ResponseEntity<Optional<Movie>> getSingleMovie(
+    @PathVariable String movieId
   ) {
-    return new ResponseEntity<Optional<Display>>(
-      displayService.singleDisplay(displayId),
+    return new ResponseEntity<Optional<Movie>>(
+      movieService.singleMovie(movieId),
       HttpStatusCode.valueOf(200)
     );
   }

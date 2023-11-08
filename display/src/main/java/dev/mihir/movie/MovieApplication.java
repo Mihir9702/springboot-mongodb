@@ -1,12 +1,12 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DisplayApplication {
+public class MovieApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(DisplayApplication.class, args);
+    SpringApplication.run(MovieApplication.class, args);
   }
 }

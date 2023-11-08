@@ -1,4 +1,4 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ public class ReviewController {
     return new ResponseEntity<Review>(
       reviewService.createReview(
         payload.get("reviewBody"),
-        payload.get("displayId")
+        payload.get("movieId")
       ),
       HttpStatusCode.valueOf(201)
     );

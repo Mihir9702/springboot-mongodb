@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.mihir</groupId>
-	<artifactId>display</artifactId>
+	<artifactId>movie</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>display</name>
+	<name>movie</name>
 	<description>Spring Boot with MongoDB</description>
 	<properties>
 		<java.version>17</java.version>

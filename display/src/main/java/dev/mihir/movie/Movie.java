@@ -1,4 +1,4 @@
-package dev.mihir.display;
+package dev.mihir.movie;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Display {
+public class Movie {
 
   @Id
   private ObjectId id;
